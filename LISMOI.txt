@@ -1,2 +1,3 @@
 cpv.sh : Script qui monte le CD-ROM et en copie le contenu dans un dossier donné
 remplace_meta.sh : Script qui remplace les méta-caractères dans le fichier donné
+wtf.sh : Script qui permet de supprimer les "Windows Thumbs.db File" de l'ensemble du système de fichier
