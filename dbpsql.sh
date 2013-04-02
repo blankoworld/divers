@@ -11,3 +11,5 @@ for i in $(psql template1 -c "SELECT datname from pg_database order by datname;"
 do
   echo $i
 done
+
+exit 0
