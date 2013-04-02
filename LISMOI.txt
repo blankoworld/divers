@@ -3,3 +3,4 @@ remplace_meta.sh : Script qui remplace les méta-caractères dans le fichier don
 wtf.sh : Script qui permet de supprimer les "Windows Thumbs.db File" de l'ensemble du système de fichier
 lister_domaine_apache.sh : Script qui permet de lister les domaines utilisés dans les fichiers Apache
 nettoie_tilde.sh : Script qui enlève les fichiers se finissant par un tilde ~ (issus, probablement de gedit)
+dbpsl.sh : Script qui donne la liste des bases de données postgresql (comme psql -l mais sans formatage)
