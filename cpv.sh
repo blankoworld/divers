@@ -2,10 +2,11 @@
 #
 # Monte un CDROM, en copie le contenu à l'endroit donné et éjecte le CDROM
 
-destination="/home/olivier/Vidéos"
-cdrom_dest="/media/cdrom"
-cdrom="/dev/cdrom1"
+destination="/home/olivier/Vidéos/"
+cdrom_dest="/mnt/cdrom"
+cdrom="/dev/sr0"
 rouge="\e[1;31m"
+vert="\e[1;32m"
 jaune="\e[1;33m"
 normal="\e[0m"
 
@@ -16,7 +17,7 @@ then
 fi
 
 mount -t iso9660 -o ro $cdrom $cdrom_dest || echo -e "${jaune}Montage du CDROM échoué${normal}"
-rsync -avP $cdrom_dest $destination || (echo -e "${rouge}Échec de la copie${normal}" && exit 1)
+(rsync -avP $cdrom_dest $destination && echo -e "${vert}Copie terminée avec succès${normal}") || (echo -e "${rouge}Échec de la copie${normal}" && exit 1)
 umount $cdrom || (echo -e "${rouge}Échec du démontage${normal}" && exit 1)
 eject $cdrom || (echo -e "${rouge}Échec de l'éjection${normal}" && exit 1)
 
