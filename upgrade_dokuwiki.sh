@@ -65,11 +65,11 @@ else
   url=$1
 fi
 
-# Check that wget is here
-cmd_wget=`which wget`
-if ! test $cmd_wget
+# Check that curl is here
+cmd_curl=`which curl`
+if ! test $cmd_curl
 then
-  echo -e "${warning}Wget command missing${normal}"
+  echo -e "${warning}CURL command missing${normal}"
   exit 1
 fi
 
@@ -104,7 +104,7 @@ cd $tmp_dir
 
 # Fetch given URL
 remote_file=`basename "$url"`
-wget --quiet -O "$remote_file" "$url" || error_and_exit "Dokuwiki download failed!"
+$cmd_curl -sLo "$remote_file" "$url" || error_and_exit "Dokuwiki download failed!"
 echo "Dokuwiki downloaded."
 
 # Extract the tarball
@@ -112,7 +112,7 @@ tar xf "$remote_file" || error_and_exit "Dokuwiki extraction failed!"
 echo "Dokuwiki extracted"
 
 # Fetch unused files
-wget --quiet -O "${file2delete_name}" "${file2delete_url}" || error_and_exit "Deleted file list download failed!"
+$cmd_curl -sLo "${file2delete_name}" "${file2delete_url}" || error_and_exit "Deleted file list download failed!"
 echo "Deleted files downloaded"
 
 # Browse installations
