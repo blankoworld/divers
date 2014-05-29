@@ -1,0 +1,54 @@
+===== Semaine 15 ======
+
+===== Lundi 6 octobre 2008 =====
+
+  * Arrivée à 9H15
+  * Discussion avec Popeye
+  * Lecture de tutoriels sur Capistrano
+  * Modification d'Apache pour me créer un public_html
+  * Reprise des lectures sur les tutoriels
+  * Pause de 12h05 à 13h20
+  * Discussion avec Olive sur les étapes à suivre pour la suite
+  * Lecture courriels
+  * Ai remarqué que la base de données ne prend pas la bonne heure, recherche du POURQUOI ! => dans postgresql on fait vim /etc/postgresql/8.3/main/postgresql.conf (on mets la valeur timezone = 'Europe/Paris') ; dans la machine on fait vim /etc/timezone pour vérifier que c'est à 'Europe/Paris' puis dans Rails on ouvre config/environment.rb pour mettre config.time_zone = 'Europe/Paris'
+  * Finalement on met tout en UTC pour être tranquille
+  * Remaniement du planner, et de mes tâches ces 3 dernières semaines
+  * Rédaction de mes travaux sur le Wiki
+  * Envoi d'un courriel à Olive avec le nouveau planner et ma répartition de tâches pour les 3 dernières semaines
+  * MàJ des dépôts GIT du projet mais également du Wiki
+  * Installation JRE (Java Runtime Environment) en vue de tester Netbeans
+  * Installation de Netbeans
+  * Lecture de tutoriel de Netbeans
+  * Départ à 17h10
+
+Durée de travail : 
+
+===== Mardi 7 octobre 2008 =====
+
+  * Visite à la médecine du travail entre 09H00 et 10H00
+  * Arrivée à 10H00 au bureau
+  * Lecture du tutoriel GIT pour faire une branche de mon boulot, et donc avoir un côté production et un côté développement
+  * Création d'une solution pour notre projet : 
+    * 2 dépôts : projet-webapp et projet-webapp-doc
+    * Sur le dépôt webapp => le code
+    * Sur le dépôt webapp-doc => les fichiers associés : exemple le cahier des charges
+    * Dans le dépôt webapp => 2 branches :
+      * MASTER = code de TEST
+      * autent de branches pour le développement de fonctionnalités, une branche par développeur, et on rapatrie chaque fois chacun le boulot des autres
+      * Une fois une branche de développement déterminée comme correcte on met sur TEST
+      * Quand le TEST est déterminé comme correct, on fait un TAG sur la branche GIT (master) et on donc les TAG définissent les versions du code de procuction, par exemple les tags suivants : webapp-0.0.1, webapp-0.1.3, etc.
+  * Pour de plus amples renseignements, Cf. Schéma produit (feuille de papier)
+  * git instaweb --httpd apache2 --browser firefox
+  * Pause de 12h20 à 13h20
+  * Discussion avec Haddock pour avoir un dépôt GIT supplémentaire
+  * Ai continué sur Capistrano avec la création de nouvelles branches pour GIT
+  * Départ à 17H00
+
+Durée de travail :
+
+* * * *
+
+Total des heures de travail : 
+
+* * * *
+

@@ -1,0 +1,18 @@
+FAITES
+------
+
+- FAIT | Création d'un fichier .awk
+- FAIT | Création du script utilisant le fichier awk et affichant des résultats
+- FAIT | Création d'un fichier LISMOI
+- FAIT | Création d'un fichier TACHES
+
+À FAIRE
+-------
+
+- Permettre de donner des plages de nombres (exemple 01-05 pour les semaines 1 à 5)
+- Permettre au programme de ne pas prendre en compte les extensions (txt par exemple)
+- Donner le total global de l'ensemble des semaines à la fin
+- Amélioration du fichier awk
+- Utilisation d'une autre méthode que par awk (Cf. autreMethode.sh)
+- Faire un fichier de configuration contenant les éléments qui permettent de trouver les jours et les heures correctement
+- Inclure le fichier de configuration dans le script (adaptation)
