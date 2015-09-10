@@ -18,7 +18,7 @@
 ## VARIABLES
 ###
 
-dossier="/home/olivier/personnel/horodatage/actuel/"
+dossier="/home/olivier/privé/horodatage/"
 nom_fic="Semaine"
 num_semaine=`date -u +%V`
 
