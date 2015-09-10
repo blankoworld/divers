@@ -1,3 +1,5 @@
+verbeux=0
+
 BEGIN {
 # Initialisation des variables importantes
 	totalMin = 0;
@@ -46,7 +48,7 @@ BEGIN {
 	departJour = (heure * 60) + minutes;
 
 	# Calcul du total de la journée
-	if (departMidi <= 0 || retourMidi <= 0)
+	if (departMidi > 0 || retourMidi > 0)
 	{
 		totalDuJour = 0 + departJour - (retourMidi - departMidi) - arriveeJour;
 	}
