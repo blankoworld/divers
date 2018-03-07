@@ -13,6 +13,7 @@ En voici une liste :
   * lister\_domaine\_apache.sh : Script qui permet de lister les domaines utilisés dans les fichiers Apache,
   * lister\_domaine\_nginx.sh : Liste les domaines utilisés dans les fichiers Nginx,
   * nettoie\_tilde.sh : Script qui enlève les fichiers se finissant par un tilde ~ (issus, probablement de gedit),
+  * random\_wallpaper.sh : Script qui change le fond d'écran toutes les 15 min en utilisant feh,
   * remplace\_meta.sh : Script qui remplace les méta-caractères dans le fichier donné,
   * upgrade\_dokuwiki.sh : Mise à jour de multiple dokuwiki différents en une seule fois,
   * wtf.sh : Script qui permet de supprimer les "Windows Thumbs.db File" de l'ensemble du système de fichier
@@ -36,6 +37,7 @@ Here is a list:
   * lister\_domaine\_apache.sh : Lists used domains in Apache files
   * lister\_domaine\_nginx.sh : Same as Apache one, but for Nginx
   * nettoie\_tilde.sh : Delete files that ends with tilde ~ (probably that comes from gedit)
+  * random\_wallpaper.sh : Change your background every 15min using feh
   * remplace\_meta.sh : Replaces meta-chars in the given file
   * upgrade\_dokuwiki.sh : Upgrade multiple dokuwiki websites all at once
   * wtf.sh : Delete "Windows Thumbs.db File" from the entire filesystem
