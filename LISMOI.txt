@@ -1,8 +1,0 @@
-cpv.sh : Script qui monte le CD-ROM et en copie le contenu dans un dossier donné
-dbpsl.sh : Script qui donne la liste des bases de données postgresql (comme psql -l mais sans formatage)
-lister_domaine_apache.sh : Script qui permet de lister les domaines utilisés dans les fichiers Apache
-lister_domaine_nginx.sh : Liste les domaines utilisés dans les fichiers Nginx. Les configurations doivent se trouver dans le dossier /etc/nginx/sites-enabled/
-nettoie_tilde.sh : Script qui enlève les fichiers se finissant par un tilde ~ (issus, probablement de gedit)
-remplace_meta.sh : Script qui remplace les méta-caractères dans le fichier donné
-upgrade_dokuwiki.sh : Mise à jour de multiple dokuwiki différents en une seule fois
-wtf.sh : Script qui permet de supprimer les "Windows Thumbs.db File" de l'ensemble du système de fichier
