@@ -12,6 +12,7 @@ En voici une liste :
   * dbpsl.sh : Script qui donne la liste des bases de données postgresql (comme psql -l mais sans formatage),
   * lister\_domaine\_apache.sh : Script qui permet de lister les domaines utilisés dans les fichiers Apache,
   * lister\_domaine\_nginx.sh : Liste les domaines utilisés dans les fichiers Nginx,
+  * maj\_domaines\_gandi.sh : Mise à jour de plusieurs enregistrements DNS chez Gandi en utilisant la version 5 de l'API
   * nettoie\_tilde.sh : Script qui enlève les fichiers se finissant par un tilde ~ (issus, probablement de gedit),
   * random\_wallpaper.sh : Script qui change le fond d'écran toutes les 15 min en utilisant feh,
   * remplace\_meta.sh : Script qui remplace les méta-caractères dans le fichier donné,
@@ -36,6 +37,7 @@ Here is a list:
   * dbpsl.sh : Lists postgreSQL databases (as psql -l without text formatting)
   * lister\_domaine\_apache.sh : Lists used domains in Apache files
   * lister\_domaine\_nginx.sh : Same as Apache one, but for Nginx
+  * maj\_domaines\_gandi.sh : Update multiple Gandi DNS records using Gandi v5 API
   * nettoie\_tilde.sh : Delete files that ends with tilde ~ (probably that comes from gedit)
   * random\_wallpaper.sh : Change your background every 15min using feh
   * remplace\_meta.sh : Replaces meta-chars in the given file
