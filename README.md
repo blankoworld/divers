@@ -23,6 +23,7 @@ D'autres projets, un peu plus conséquents sont égalements présents (et possè
 
   * backup\_hubic : ancien script pour sauver ses données sur HubiC,
   * destructeur\_fichier : supprime les fichiers renseignés dans *liste_a_supprimer.txt*,
+  * github\_desktop\_notification : affiche les notifications de Github sur son bureau (via notify-send)
   * hebdoboulot : notez vos heures de travail en mode Markdown suivant un format précis, et l'outil calcul vos heures de la semaine,
   * maintenance\_informatique : calcul du temps dépensé sur une tâche en phase active et en phase passive,
   * multisynchro : synchronise un dossier vers de multiples endroits
@@ -48,6 +49,7 @@ More weighty projects exist in this repository (and have their own *README*):
 
   * backup\_hubic : script to save our data to HubiC
   * destructeur\_fichier : delete files regarding *liste_a_supprimer.txt* file
+  * github\_desktop\_notification : display Github notification on your desktop (via notify-send)
   * hebdoboulot : take note of your work hours in Markdown with a specific format, then this tool gives you how many hours your works this week
   * maintenance\_informatique : process consumption time on a specific task with active and passive stage
   * multisynchro : synchronize a directory to multiple destinations

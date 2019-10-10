@@ -1,0 +1,11 @@
+[Unit]
+Description=Notifications Github toutes les 8 min
+
+[Timer]
+OnBootSec=8min
+OnUnitActiveSec=8min
+Persistent=True
+Unit=fronde.service
+
+[Install]
+WantedBy=multi-user.target

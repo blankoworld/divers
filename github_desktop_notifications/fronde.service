@@ -1,0 +1,12 @@
+[Unit]
+Description=Notifications Github
+
+[Service]
+Environment="API_KEY=oefijzoifjzeoifjzeoifjeo"
+Environment="DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus"
+User=myUser
+ExecStart=/usr/bin/bash /home/myUser/bin/fronde
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

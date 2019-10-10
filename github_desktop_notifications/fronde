@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# Fronde : lance les notifications Github au démon de notification
+# Utilise notify-send
+# ATTENTION : il faut une clé API. Cf. https://github.com/settings/tokens
+
+# Utilisation : 
+#    API_KEY=5b10dbc8f77a19f3d8c5a2f0fdaa ./fronde
+
+priority="normal" # low, normal, critical
+time="5000" # expiry time in milliseconds
+api_url="https://api.github.com/notifications"
+
+# Avons besoin d'une clé API Github
+if [[ -z "$API_KEY" ]]; then
+	echo "Clé API manquante ! Renseignez API_KEY." && exit 1
+fi
+
+echo "Recherche des notifications…"
+text=`curl -u blankoworld:${API_KEY} "${api_url}"`
+notifications=`echo "${text}" |jq -r '.[] | "\(.repository.full_name):\(.subject.type):\(.subject.title)"'`
+
+IFS="
+"
+
+echo "Parcours des notifications…"
+for notif in ${notifications}:
+do
+  depot="$(echo ${notif}|cut -d: -f1)"
+  _type="$(echo ${notif}|cut -d: -f2)"
+  detail="$(echo ${notif}|cut -d: -f3)"
+  notify-send -u $priority -t $time "$depot" "${_type} : ${detail}"
+done
+
+exit 0
