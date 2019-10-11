@@ -17,19 +17,15 @@ if [[ -z "$API_KEY" ]]; then
 fi
 
 echo "Recherche des notifications…"
-text=`curl -u blankoworld:${API_KEY} "${api_url}"`
-notifications=`echo "${text}" |jq -r '.[] | "\(.repository.full_name):\(.subject.type):\(.subject.title)"'`
-
-IFS="
-"
-
-echo "Parcours des notifications…"
-for notif in ${notifications}:
+text=`curl -s -u blankoworld:${API_KEY} "${api_url}"`
+echo "${text}" |jq -c '.[] | {name: .repository.full_name, tag: .subject.type, description: .subject.title}'| while read json
 do
-  depot="$(echo ${notif}|cut -d: -f1)"
-  _type="$(echo ${notif}|cut -d: -f2)"
-  detail="$(echo ${notif}|cut -d: -f3)"
-  notify-send -u $priority -t $time "$depot" "${_type} : ${detail}"
+  depot=$(echo $json|jq -r .name)
+  tag=$(echo $json|jq -r .tag)
+  detail=$(echo $json|jq -r .description)
+  notify-send -u $priority -t $time "$depot" "$tag : $detail"
 done
+
+echo "…terminé"
 
 exit 0
