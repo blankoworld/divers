@@ -14,6 +14,7 @@ En voici une liste :
   * lister\_domaine\_nginx.sh : Liste les domaines utilisés dans les fichiers Nginx,
   * maj\_domaines\_gandi.sh : Mise à jour de plusieurs enregistrements DNS chez Gandi en utilisant la version 5 de l'API
   * nettoie\_tilde.sh : Script qui enlève les fichiers se finissant par un tilde ~ (issus, probablement de gedit),
+  * ps4asXbox.sh : Script qui reconnaît la manette PS4 comme d'une manette Xbox
   * random\_wallpaper.sh : Script qui change le fond d'écran toutes les 15 min en utilisant feh,
   * remplace\_meta.sh : Script qui remplace les méta-caractères dans le fichier donné,
   * upgrade\_dokuwiki.sh : Mise à jour de multiple dokuwiki différents en une seule fois,
@@ -40,6 +41,7 @@ Here is a list:
   * lister\_domaine\_nginx.sh : Same as Apache one, but for Nginx
   * maj\_domaines\_gandi.sh : Update multiple Gandi DNS records using Gandi v5 API
   * nettoie\_tilde.sh : Delete files that ends with tilde ~ (probably that comes from gedit)
+  * ps4asXbox.sh : Recognize a PS4 gamepad as Xbox one
   * random\_wallpaper.sh : Change your background every 15min using feh
   * remplace\_meta.sh : Replaces meta-chars in the given file
   * upgrade\_dokuwiki.sh : Upgrade multiple dokuwiki websites all at once
