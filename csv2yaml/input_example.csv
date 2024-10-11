@@ -1,0 +1,46 @@
+Abréviation,Signification,Informations supplémentaires
+CPU,Central Processing Unit,Cerveau de l'ordinateur
+RAM,Random Access Memory,Mémoire vive de l'ordinateur
+GIL,Global Interpreter Lock,Verrou Python sur espace RAM utilisé : 1 seul Thread y accède à la fois
+API,Application Programming Interfaces,Permet à des composants de communiquer entre eux
+JSON,JavaScript Object Notation,Format de données
+ETL,"Extract, Transform, Load",Méthode pour étudier des données
+KPI,Key Performance Indicators,Statistiques sur les performances (ex : d'une équipe) dans un jeu de données
+URI,Universal Resource Identifier,Adresse pour faire une requête
+SSL,Secure Socket Layer,Couche de sécurisation (ex : au dessus de HTTP => devient HTTPS)
+cURL,client URL Request Library,Prog. en CLI pour faire des requêtes Web
+REST,Representational State Transfer,Type d'architecture utilisée dans les services WEB
+PID,Processus ID,Identifiant de processus
+GPT,GUID Partition Table,
+UUID,Universal Unique IDentifier,
+LVM,Logical Volume Manager,Gestionnaire de volumes logiques
+TCP/IP,Transmission Control Protocol / Internet Protocol,Protocole pour communiquer entre 2 ordinateurs
+UDP,User Datagram Protocol,Protocole pour communiquer entre 2 ordinateurs
+IP,Internet Protocol,"Protocole Internet, utilise la couche 3 du modèle OSI"
+ICMP,Internet Control Message Protocol,"Protocole utilisé pour les erreurs, rapports, incidents, succès, stats, etc."
+TCP,Transmission Control Protocol,Protocole pour garantir la fiabilité
+FAI,Fournisseur d'Accès Internet,
+CIDR,Classless Inter-Domain Routing,Schéma d'adressage IP. Ex: 192.168.1.12/20
+DNS,Domain Name System,Domaine <-> Adresse IP
+LAN,Local Area Network,Réseau local non accessible depuis internet
+RIP,Routing Information Protocol,Protocole de routage dynamique (intérieur)
+EIGRP,Enhanced Interior Gateway Routing Protocol,Protocole de routage dynamique (intérieur)
+OSPF,Open Shortest Path First,Protocole de routage dynamique (intérieur)
+BGP,Border Gateway Protocol,Protocole de routage dynamique (extérieur)
+DHCP,Dynamic Host Configuration Protocol,Serveur qui attribue des adresses IP
+nmap,Network Mapper,Outil en CLI pour scanner les ports
+NSE,Nmap Scripting Engine,
+UFW,Uncomplicated Firewall,Interface à iptables pour la création de règles réseau
+netstat,Network Statistics,Commande pour surveiller l'activité du réseau
+SSH,Secure Shell,Protocole sécurisé de connexion à distance
+MD5,Message-Digest Algorithm,"Protocole de chiffrement pour authentifier les messages, vérifier le contenu et contrôler les signatures numériques"
+RDBMS,Relational Data Base Management System,systèmes de gestion de bases de données relationnelles
+DBaaS,DataBase as a Service,Base de données dans le Cloud
+LEMP,"Linux, Engine-X (NGINX), MySQL (MariaDB), PHP",Pile de technologies pour un serveur applicatif complet
+LAMP,"Linux, Apache, MySQL, PHP",Pile de technologies pour un serveur applicatif complet
+BaaS,Back up as a Service,Solution de sauvegarde en ligne
+RPO,Recovery Point Objective,Objectif de point de récupération (pour les sauvegardes)
+RTO,Recovery Time Objective,Objectif de temps de récupération (pour la restauration d'une sauvegarde)
+SLA,Service Level Agrement,Temps total d'interruption du système en cas de restauration
+DLP,Data Loss Prevention,Prévention des pertes de données
+RSync,Remote Sync,Synchronisation à distance (pour la copie de fichiers)

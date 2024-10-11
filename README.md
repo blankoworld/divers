@@ -9,6 +9,7 @@ Ce dépôt contient plusieurs scripts complètement différents pour résoudre d
 En voici une liste : 
 
   * cpv.sh : Script qui monte le CD-ROM et en copie le contenu dans un dossier donné,
+  * csv2yaml : Transforme un fichier CSV en fichier YAML,
   * dbpsl.sh : Script qui donne la liste des bases de données postgresql (comme psql -l mais sans formatage),
   * lister\_domaine\_apache.sh : Script qui permet de lister les domaines utilisés dans les fichiers Apache,
   * lister\_domaine\_nginx.sh : Liste les domaines utilisés dans les fichiers Nginx,
